@@ -1,5 +1,8 @@
-# tensor_product_chebyshev.jl
-## Apriximate multivariate function with chebyshev polynomial in Julia!
+# Function aproximations
+### The goal of dynamic programming is to calculate a function that describes the value of any dyven decision. This value function uniquely determines the optimal policy given the current state of the system. Any numerical routine designed to solve a dynamic program requires a method to aproximate the value fucntion or a closely related quantity. This directory contains code to aproximate a value function in several ways. 
+
+## tensor_product_chebyshev.jl
+### Apriximate multivariate function with chebyshev polynomial in Julia!
 This repository provides a data structure and set of methods for aproximating multidimensional functions with chebyshev poynomials. These function aproximation methods should be very useful for dynamic programming and other applications that solve for arbitrary continuous functions. 
 
 The library is based around a single data structure, a mutable struct call `interpolation`. It stores data that describe the number of dimensions of the function the domain of the function and the number of nodes used for the aproximation. The value of the function at the nodes and a vector of polynomial coeficents used to represent the function are also stored and can be used to evaluate the function at points that lie off of the grid. 
